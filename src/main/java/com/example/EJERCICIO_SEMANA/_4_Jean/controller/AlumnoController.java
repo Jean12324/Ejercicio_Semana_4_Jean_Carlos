@@ -23,7 +23,7 @@ public class AlumnoController {
         return "formulario";
     }
 
-    @PostMapping("/registro/exito")
+    @PostMapping("/formulario/exito")
     public String procesarFormulario(@ModelAttribute Alumno alumno, Model model) {
         model.addAttribute("alumno", alumno);
         return "exito";
